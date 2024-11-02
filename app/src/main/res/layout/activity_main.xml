@@ -9,9 +9,21 @@
         android:id="@+id/btnIrListaCompra"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/btn_ir_lista_compra"
+        android:layout_marginBottom="8dp" />
 
     <Button
         android:id="@+id/btnIrTareas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/btn_ir_tareas"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnCambiarIdioma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_cambiar_idioma"
+        android:layout_marginBottom="8dp" />
+
 </LinearLayout>
