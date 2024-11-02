@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+
     <EditText
         android:id="@+id/etTareaInput"
         android:layout_width="match_parent"
@@ -15,6 +16,28 @@
         android:padding="12dp"
         android:importantForAutofill="yes" />
 
+
+    <EditText
+        android:id="@+id/etFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_seleccionar_fecha"
+        android:focusable="false"
+        android:clickable="true"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:layout_marginTop="8dp" />
+
+
+    <Spinner
+        android:id="@+id/spinnerPrioridad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp"
+        android:padding="8dp" />
+
+
     <Button
         android:id="@+id/btnAgregarTarea"
         android:layout_width="match_parent"
@@ -23,6 +46,7 @@
         android:minHeight="48dp"
         android:padding="12dp"
         android:layout_marginTop="8dp" />
+
 
     <Button
         android:id="@+id/btnVerPendientes"
@@ -33,6 +57,7 @@
         android:padding="12dp"
         android:layout_marginTop="8dp" />
 
+
     <Button
         android:id="@+id/btnVerHechas"
         android:layout_width="match_parent"
@@ -41,6 +66,7 @@
         android:minHeight="48dp"
         android:padding="12dp"
         android:layout_marginTop="8dp" />
+
 
     <ListView
         android:id="@+id/listViewTareas"

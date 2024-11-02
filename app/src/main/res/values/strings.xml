@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Español -->
     <string name="app_name">Prueba Android</string>
     <string name="hint_nueva_tarea">Nueva tarea</string>
     <string name="btn_agregar_tarea">Añadir tarea</string>
@@ -6,4 +8,21 @@
     <string name="btn_ver_hechas">Ver tareas hechas</string>
     <string name="lista_compras">Lista de Compras</string>
     <string name="gestion_tareas">Gestión de Tareas</string>
+    <string name="btn_ir_lista_compra">Ir a Lista de la Compra</string>
+    <string name="btn_ir_tareas">Ir a Tareas</string>
+    <string name="btn_cambiar_idioma">Cambiar idioma</string>
+    <string name="hint_seleccionar_fecha">Seleccionar fecha</string>
+    <!-- Inglés -->
+    <!--
+    <string name="app_name">Android Test</string>
+    <string name="hint_nueva_tarea">New task</string>
+    <string name="btn_agregar_tarea">Add task</string>
+    <string name="btn_ver_pendientes">View pending tasks</string>
+    <string name="btn_ver_hechas">View completed tasks</string>
+    <string name="lista_compras">Shopping List</string>
+    <string name="gestion_tareas">Task Management</string>
+    <string name="btn_ir_lista_compra">Go to Shopping List</string>
+    <string name="btn_ir_tareas">Go to Tasks</string>
+    <string name="btn_cambiar_idioma">Change Language</string>
+    -->
 </resources>
