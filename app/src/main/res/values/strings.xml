@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Prueba Android</string>
+    <string name="hint_nueva_tarea">Nueva tarea</string>
+    <string name="btn_agregar_tarea">Añadir tarea</string>
+    <string name="btn_ver_pendientes">Ver tareas pendientes</string>
+    <string name="btn_ver_hechas">Ver tareas hechas</string>
+    <string name="lista_compras">Lista de Compras</string>
+    <string name="gestion_tareas">Gestión de Tareas</string>
+</resources>
