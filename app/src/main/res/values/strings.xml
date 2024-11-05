@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- Español -->
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Prueba Android</string>
     <string name="hint_nueva_tarea">Nueva tarea</string>
     <string name="btn_agregar_tarea">Añadir tarea</string>
@@ -11,18 +9,13 @@
     <string name="btn_ir_lista_compra">Ir a Lista de la Compra</string>
     <string name="btn_ir_tareas">Ir a Tareas</string>
     <string name="btn_cambiar_idioma">Cambiar idioma</string>
-    <string name="hint_seleccionar_fecha">Seleccionar fecha</string>
-    <!-- Inglés -->
-    <!--
-    <string name="app_name">Android Test</string>
-    <string name="hint_nueva_tarea">New task</string>
-    <string name="btn_agregar_tarea">Add task</string>
-    <string name="btn_ver_pendientes">View pending tasks</string>
-    <string name="btn_ver_hechas">View completed tasks</string>
-    <string name="lista_compras">Shopping List</string>
-    <string name="gestion_tareas">Task Management</string>
-    <string name="btn_ir_lista_compra">Go to Shopping List</string>
-    <string name="btn_ir_tareas">Go to Tasks</string>
-    <string name="btn_cambiar_idioma">Change Language</string>
-    -->
+    <string name="hint_seleccionar_fecha" tools:ignore="MissingTranslation">Seleccionar fecha</string>
+    <string name="titulo_resumen_tareas_completadas">Resumen de Tareas Completadas</string>
+    <string name="indicacion_marcar_completada">Pulsa en la tarea que quieras marcar como completada</string>
+
+    <!-- Nuevas cadenas para la lista de compras -->
+    <string name="hint_nombre_producto">Nombre del producto</string>
+    <string name="hint_cantidad_producto">Cantidad (opcional)</string>
+    <string name="hint_precio_producto">Precio (opcional)</string>
+    <string name="btn_agregar_producto">Añadir producto</string>
 </resources>

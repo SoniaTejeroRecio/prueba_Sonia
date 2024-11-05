@@ -30,6 +30,23 @@
             android:name=".TareaActivity"
             android:exported="false"
             android:theme="@style/Theme.PruebaAndroid1" />
+
+        <activity
+            android:name=".TaskDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PruebaAndroid1" />
+
+        <activity
+            android:name=".TareasHechasActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PruebaAndroid1" />
+
+        <!-- Nueva actividad añadida -->
+        <activity
+            android:name=".ResumenProductosActivity"
+            android:exported="false"
+            android:theme="@style/Theme.PruebaAndroid1" />
+
     </application>
 
 </manifest>

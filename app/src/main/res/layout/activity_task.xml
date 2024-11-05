@@ -5,6 +5,18 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Texto informativo en un recuadro verde con suficiente contraste -->
+    <TextView
+        android:id="@+id/tvIndicacionMarcarCompletada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/indicacion_marcar_completada"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/holo_green_light"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center" />
 
     <EditText
         android:id="@+id/etTareaInput"
@@ -16,7 +28,6 @@
         android:padding="12dp"
         android:importantForAutofill="yes" />
 
-
     <EditText
         android:id="@+id/etFecha"
         android:layout_width="match_parent"
@@ -24,10 +35,10 @@
         android:hint="@string/hint_seleccionar_fecha"
         android:focusable="false"
         android:clickable="true"
+        android:inputType="none"
         android:minHeight="48dp"
         android:padding="12dp"
         android:layout_marginTop="8dp" />
-
 
     <Spinner
         android:id="@+id/spinnerPrioridad"
@@ -36,7 +47,6 @@
         android:layout_marginTop="8dp"
         android:minHeight="48dp"
         android:padding="8dp" />
-
 
     <Button
         android:id="@+id/btnAgregarTarea"
@@ -47,7 +57,6 @@
         android:padding="12dp"
         android:layout_marginTop="8dp" />
 
-
     <Button
         android:id="@+id/btnVerPendientes"
         android:layout_width="match_parent"
@@ -57,7 +66,6 @@
         android:padding="12dp"
         android:layout_marginTop="8dp" />
 
-
     <Button
         android:id="@+id/btnVerHechas"
         android:layout_width="match_parent"
@@ -66,7 +74,6 @@
         android:minHeight="48dp"
         android:padding="12dp"
         android:layout_marginTop="8dp" />
-
 
     <ListView
         android:id="@+id/listViewTareas"

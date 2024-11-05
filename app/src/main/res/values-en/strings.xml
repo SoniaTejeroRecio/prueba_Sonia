@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Android Test</string>
+    <string name="hint_nueva_tarea">New task</string>
+    <string name="btn_agregar_tarea">Add task</string>
+    <string name="btn_ver_pendientes">View pending tasks</string>
+    <string name="btn_ver_hechas">View completed tasks</string>
+    <string name="lista_compras">Shopping List</string>
+    <string name="gestion_tareas">Task Management</string>
+    <string name="btn_ir_lista_compra">Go to Shopping List</string>
+    <string name="btn_ir_tareas">Go to Tasks</string>
+    <string name="btn_cambiar_idioma">Change language</string>
+    <string name="hint_seleccionar_fecha" tools:ignore="MissingTranslation">Select date</string>
+    <string name="titulo_resumen_tareas_completadas">Summary of Completed Tasks</string>
+    <string name="indicacion_marcar_completada">Tap on the task you want to mark as completed</string>
+
+    <!-- New strings for the shopping list -->
+    <string name="hint_nombre_producto">Product name</string>
+    <string name="hint_cantidad_producto">Quantity (optional)</string>
+    <string name="hint_precio_producto">Price (optional)</string>
+    <string name="btn_agregar_producto">Add product</string>
+</resources>

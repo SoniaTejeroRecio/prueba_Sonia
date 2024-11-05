@@ -1,6 +1,7 @@
 package com.example.pruebaandroid1
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.Spanned
@@ -17,6 +18,7 @@ import java.util.*
 class TareaActivity : AppCompatActivity() {
     private lateinit var binding: ActivityTaskBinding
     private val tareas = mutableListOf<Tarea>()
+    private val tareasCompletadas = mutableListOf<Tarea>()
     private lateinit var adaptadorTareas: ArrayAdapter<CharSequence>
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +26,7 @@ class TareaActivity : AppCompatActivity() {
         binding = ActivityTaskBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //Configurar prioridades
+
         val prioridades = arrayOf("URGENTE", "MEDIA", "NORMAL")
         val spinnerAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, prioridades)
         spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
@@ -44,7 +46,7 @@ class TareaActivity : AppCompatActivity() {
             datePicker.show()
         }
 
-        //botón gregar una nueva tarea
+
         binding.btnAgregarTarea.setOnClickListener {
             val descripcion = binding.etTareaInput.text.toString()
             val prioridad = binding.spinnerPrioridad.selectedItem.toString()
@@ -59,6 +61,18 @@ class TareaActivity : AppCompatActivity() {
             }
         }
 
+
+        binding.listViewTareas.setOnItemClickListener { _, _, position, _ ->
+            val tareaSeleccionada = tareas[position]
+            tareasCompletadas.add(tareaSeleccionada) //anieadir a la lista de tareas completadas
+            tareas.removeAt(position)
+            actualizarVista()
+
+
+            val intent = Intent(this, TareasHechasActivity::class.java)
+            intent.putParcelableArrayListExtra("TAREAS_COMPLETADAS", ArrayList(tareasCompletadas))
+            startActivity(intent)
+        }
 
         adaptadorTareas = ArrayAdapter(this, android.R.layout.simple_list_item_1, tareas.map { formatTarea(it) })
         binding.listViewTareas.adapter = adaptadorTareas
